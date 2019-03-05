@@ -1,0 +1,239 @@
+body
+{
+    background-color: whitesmoke;
+}
+.main
+{
+
+    top: 7%;
+    margin-top: 30px;
+    display: -webkit-box;
+    height: 50%;
+}
+.images_header
+{
+
+    width: 100%;
+    font-size: 32px;
+    padding-left: 35%;
+    background-color: #660044;
+    color: white;
+}
+
+.images-div
+{
+    height: -webkit-fill-available;
+    width: 25%;
+    margin-left: 7%;
+    overflow: scroll;
+    background-color: #660044;
+}
+.current-img
+{
+    width: 95%;
+    height: 95%;
+    margin-left: 12px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.canvas-div
+{
+    display: inline-block;
+    margin-left: 80px;
+    background-color: #660044;
+    text-align: center;
+}
+#myCanvas
+{
+    background: linear-gradient(to right top, #e5d9e0, #e3cbdc, #dfbeda, #d8b2d9, #cfa6da, #c1a9e4, #b0aded, #9bb2f4, #85c3f9, #7ed2f6, #88deed, #9fe8e4);
+    border: black;
+}
+.drag_div
+{
+    position: absolute;
+}
+
+.resizable {
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+}
+
+.resizers{
+    width: 100%;
+    height: 100%;
+    border: 3px solid #660044;
+    box-sizing: border-box;
+    position: relative;
+}
+.resizer{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border: 3px solid #660044;
+    z-index: 10000;
+}
+td
+{
+    border: solid 3px black;
+}
+
+/*resizers*/
+.top-left
+{
+    left: -5px;
+    top: -5px;
+    cursor: nwse-resize; /*resizer cursor*/
+}
+.top-right {
+    right: -5px;
+    top: -5px;
+    cursor: nesw-resize;
+}
+.bottom-left {
+    left: -5px;
+    bottom: -5px;
+    cursor: nesw-resize;
+}
+.bottom-right
+{
+    right: -5px;
+    bottom: -5px;
+    cursor: nwse-resize;
+}
+
+
+.drag_div
+{
+    position: absolute;
+}
+
+.crop_width_value, .crop_height_value
+{
+    font-size: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 15px;
+    color: white;
+}
+.crop_height, .crop_width
+{
+    width: 50px;
+    height: 30px;
+    padding-right: 10px;
+}
+.px_span
+{
+    margin-right: 30px;
+}
+.btn, .save_butt
+{
+    display: none;
+    margin-top: 15px;
+    width: 150px;
+    height: 55px;
+    font-size: 35px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.tools
+{
+    font-size: 30px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 30%;
+    border-bottom: solid white;
+}
+
+.buttons_div
+{
+    background-color: #660044;
+    margin-left: 2%;
+    height: 890px;
+    width: 150px;
+    align-items: center;
+}
+
+.cancel
+{
+    color: #85c3f9;
+    background-color:white;
+    border: solid #85c3f9;
+}
+.cancel:hover
+{
+    background-color:#85c3f9;
+    border: none;
+    color: white;
+}
+.checked, .save_butt
+{
+    background-color: white;
+    color: #660044;
+    border: solid #660044;
+
+}
+.checked:hover, .save_butt:hover
+{
+    background-color: #660044;
+    color: white;
+    border: none;
+}
+.crop_icon
+{
+    margin-left: 35%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #660044;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+}
+.crop_icon:hover
+{
+    color: black;
+}
+.crop_icon:disabled:hover
+{
+    color: white;
+}
+.zoom_lable
+{
+    color: #660044;
+    font-size: 18px;
+}
+.zoom
+{
+    margin-top: 5px;
+    outline: #660044;
+    font-size: 30px;
+    background-color: #85c3f9;
+    border: none;
+    width: 143px;
+    margin-left: 3px;
+}
+.zoom:disabled
+{
+    background-color:#660044
+}
+
+#new_Canvas
+{
+    display: none;
+}
+
+
+.lab_width
+{
+    font-size: 20px;
+    color: white;
+}

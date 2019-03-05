@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="jquery-3.2.1.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+          integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+</head>
+<body>
+<div class="main">
+    <div class="buttons_div"> <span class="tools">Tools</span>
+        <button class="crop_icon" disabled = true><i class="fas fa-crop" ></i></button>
+        <label class="zoom_lable">Width<input type="number" class="zoom" disabled = true></label>
+        <button class="btn checked"><i class="fas fa-check"></i></button>
+        <button class="btn cancel" ><i class="fas fa-times"></i></button>
+        <div class="downoad_div"><a id="download" download="my-file-name.png" href="#"><button class="save_butt">Save </button></a></div>
+
+    </div>
+    <div class="canvas-div inline">
+        <div class="crop_width_value">Resized width:
+            <span class="crop_height_val">0</span><span class="px_span">px</span>
+            <span class="crop_height_value">Resized height:
+            <span class="crop_height_val">0</span><span>px</span>
+        </span>
+        </div>
+        <canvas id="myCanvas" height="850px" width="1100px" ></canvas>
+    </div>
+    <div class="images-div inline"> <div class="images_header">Images</div></div>
+</div>
+<div class="drag_div"></div>
+<script src="script.js"></script>
+</body>
+</html>
